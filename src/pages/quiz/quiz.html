@@ -1,0 +1,36 @@
+<ion-content>
+
+  <ion-slides #slides>
+
+    <ion-slide class="start-slide">
+        <h3>{{selectedTest.testName}}</h3> 
+      <button ion-button color="primary" (click)="nextSlide()">Start!</button>
+    </ion-slide>
+
+    <ion-slide *ngFor="let card of cards; let i = index;">
+
+      <h3>Question {{i+1}}</h3>
+
+      <flash-card>
+        <div class="flash-card-front" [innerHTML]="card.question"></div>
+        <div class="flash-card-back" [innerHTML]="card.answer"></div>
+      </flash-card>
+     
+      <button (click)="nextSlide()" ion-button color="primary">Next</button>
+
+    </ion-slide>
+
+
+
+    <ion-slide class="finish-slide">
+
+      <button (click)="restartQuiz()" ion-button color="primary">Start Again</button>
+      <button (click)="mainMenu()" ion-button color="primary">Main Menu</button>
+
+    </ion-slide>
+
+  </ion-slides>
+
+
+
+</ion-content>

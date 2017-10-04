@@ -22,5 +22,12 @@ $ ionic cordova platform add ios
 $ ionic cordova run ios
 ```
 
-Substitute ios for android if not on a Mac.
+### Build and Publish App :
+[reference](http://ionicframework.com/docs/v1/guide/publishing.html)
 
+ionic cordova build --release android
+
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "C:\Projects\studyguide\studyguideapp\my-release-key.keystore" android-release-unsigned.apk alias_name
+
+"C:\Users\rsites\AppData\Local\Android\sdk\build-tools\23.0.3\zipalign.exe" -v 4 android-release-unsigned.apk Lacey.apk

@@ -1,0 +1,42 @@
+.ios,
+.md {
+  page-quiz {
+    ion-slide {
+      align-items: flex-start;
+    }
+    ion-item {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+    flash-card {
+      color: #000;
+      background-color: pink;
+      img {
+        width: 70%;
+        height: auto;
+      }
+    }
+    .start-slide {
+      justify-content: center;
+      align-items: center;
+      button {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    }
+    .finish-slide {
+      justify-content: center;
+      align-items: center;
+      button {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    }
+    .front {
+      background-color: #ffc0cb;
+    }
+    .back {
+      background-color: #ff99cc;
+    }
+  }
+}

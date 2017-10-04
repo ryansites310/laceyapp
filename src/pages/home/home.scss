@@ -1,3 +1,14 @@
-page-home {
-
+.ios,
+.md {
+  page-home {
+    justify-content: center;
+    align-items: center;
+    button {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    h3 {
+      text-align: center
+    }
+  }
 }
